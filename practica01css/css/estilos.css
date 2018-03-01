@@ -1,0 +1,7 @@
+body{
+   border:1px solid blue;
+   font-size:16 px; /*1em*/
+   margin:0 auto;
+   max-width: 1024px;
+
+}
