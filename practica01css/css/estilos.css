@@ -5,6 +5,11 @@ body{
    max-width: 1024px;
 
 }
+header
+{
+  background:#B3D8EB;
+  /*margin-bottom:15px;*/
+}
 header form{
 	float: right;
 	margin-top:-40px;
@@ -17,11 +22,6 @@ header form input[type="button"]{
 	background:green;
 	border:1px solid green;/*Para que el borde no sea visible*/
 	color:white;
-
-}
-header
-{
-	background: #b3d0e0;
 }
 header nav {
 	 background: #026dc6;
@@ -38,3 +38,39 @@ header nav ul li{
 #logo{
 	margin-top: -150px;
 }
+#seccion01{
+	margin-top: 15px;
+}
+#seccion01 article{
+	text-align: center;
+}
+#seccion01 article img{
+	border:5px solid rgba(150,150,150,0.5);
+	width:98%;
+}
+#seccion02{
+	margin-bottom: 20px;
+}
+#seccion02 article{   /*Una seccion*/
+	display:inline-block;
+	vertical-align:top;
+	width:32.8%;
+} 
+#seccion02 article input[type="submit"]{
+	background: white;
+	border-radius: 5px;
+	color: blue;
+	margin-left: 130px;
+
+}
+/*Puedo poner más de un selector para distintos atributos-valor*/
+.otraSeccion,.unaSeccion{
+	font-weight: bold; /*negritas*/
+}
+.otraSeccion{
+	font-size:2.5em;  /*2.5*16*/
+}
+.unaSeccion{ /*Las clases de CSS comienzan con un punto*/ 
+    font-size:3em;   /*4.5*16*/
+}
+
