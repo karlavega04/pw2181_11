@@ -1,0 +1,34 @@
+body{
+    font-size: 16px; /*1em*/
+    margin:0 auto;
+    min-width: 1078px; /*Que no se haga ni mas grande ni mas chico*/
+    max-width: 1078px;
+}
+header input
+{
+	float:right;
+	margin-top: 15px;
+	margin-right: -200px;
+	position: relative;/* Debido a que los elementos son estaticos se pone uno abajo del otro
+	Para que el objeto se vaya hacia adelante*/
+}
+header nav ul li
+{
+   border-bottom: 1px solid gray;
+   color: gray;
+   display: inline-block;
+   font-size: 1.8em;
+   margin-right: 15px; 
+   padding-bottom: 2px;
+}
+#granthams
+{
+   margin-top: 20px;
+   margin-left: 25px;
+}
+#paint
+{
+	float:right; /*Que se mueva hacia la derecha*/
+}
+
+
