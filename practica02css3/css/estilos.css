@@ -21,6 +21,12 @@ header nav ul li
    margin-right: 15px; 
    padding-bottom: 2px;
 }
+#bgoffer
+{
+  left: -35px;
+  position: relative;
+  top: -410px;
+}
 #granthams
 {
    margin-top: 20px;
@@ -29,6 +35,83 @@ header nav ul li
 #paint
 {
 	float:right; /*Que se mueva hacia la derecha*/
+}
+#primerseccion
+{
+   height:318px;
+   margin-top: 100px;
+}
+#primerseccion article
+{
+     display: inline-block;
+     vertical-align:top;
+}
+
+#secc01art01
+{
+  margin-left: 30px;
+  width: 60%;
+}
+
+#secc01art02
+{
+   margin-left: 50px;
+   width: 30%;
+}
+#secc01art02 ul{
+   list-style:none;
+}
+#secc01art02 ul li:before
+{
+    content: "• "; 
+    color:#F7C6DC;
+}
+#segundaseccion article
+{
+   padding-right: 122px;
+   text-align: right;
+}
+#terceraseccion article
+{
+   vertical-align: top;
+   display: inline-block;
+   width: 23%; /*100%/4 article*/
+}
+#terceraseccion article input[type="email"]
+{
+   border-radius: 5px;
+}
+#terceraseccion article input[type="buton"]
+{
+    background: #8bc500;
+    border-radius: 5px;
+    color:white;
+}
+#terceraseccion article img
+{
+  /*Alineacion vertical del texto*/
+  vertical-align: middle;
+}
+.colorazul
+{
+    color:#4267b3;
+}
+.colorrosa{
+  color: #FF0099;
+}
+.colorverde
+{
+ color:#8bc500;
+}
+.letramediana{
+  font-size: 2em;
+}
+.nito{
+  font-weight:bold;
+}
+.letragrande
+{
+  font-size: 3.5em;
 }
 
 
