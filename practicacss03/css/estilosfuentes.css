@@ -1,0 +1,12 @@
+@font-face
+{
+   font-family: Karla;
+   src: url("Karla/Karla_Bold.ttf");
+}
+
+
+body
+{
+	/*font-family: 'Roboto Slab', serif;*/
+	font-family: Karla,sans-serif;
+}
