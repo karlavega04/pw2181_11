@@ -1,0 +1,93 @@
+body
+{
+  font-size: 15px;
+  min-width: 1078px; 
+  max-width: 1078px;
+}
+header nav ul
+{
+    background:#00c8b6;
+    display:inline-block;
+    list-style: none;
+    color:white;
+    
+}
+header nav ul li
+{
+    display:inline-block;
+    color:white;
+    margin-right: 11.6px;
+    font-size: 17px;
+}
+#primeraseccion input
+{
+	border:3px solid white;
+	background: #00c8b6;
+	color:white;
+	margin-right: -150px;
+}
+#segundaseccion input
+{
+	background:green;
+	color:white;
+}
+#primeraseccion
+{
+   background:#00c8b6;
+   margin-top: -15px;
+}
+#secc01 img
+{
+	height: 300px;
+}
+#secc02
+{
+	margin-left: 125px;
+}
+#primeraseccion article
+{
+	display: inline-block;
+	vertical-align: top;
+}
+#segundaseccion article
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+
+}
+#canasta
+{
+   float: right;
+   margin-right:  51px;
+}
+#precio
+{
+	float: right;
+	margin-right: -150px;
+
+}
+#TEES1
+{
+	vertical-align: top;
+}
+.letramediana
+{
+	font-size: 2em;
+}
+.letragrande
+{
+	font-size: 3.5em;
+}
+.colorblanco
+{
+	color:white;
+}
+.colorgris
+{
+	 color:gray;
+}
+.nito
+{
+	font-weight: bold;
+}
