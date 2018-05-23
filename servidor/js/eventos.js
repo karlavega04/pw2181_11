@@ -8,7 +8,7 @@ var inicioApp=function(){
 	   	                 "&usuario="+usuario+
 	   	                 "&clave="+clave+
 	   	                 "&id="+Math.random();//hace que el numero cambie cada que se ejecuta la funcion
-
+//alert(parametros)
 	   	                  $.ajax({
 	   	                  cache:false,
 	   	                  type: "POST",
@@ -17,6 +17,7 @@ var inicioApp=function(){
 	   	                  data:parametros,
 	   	                  success:function(response){
 	   	                  	 if(response.respuesta == true){
+	   	                  	 	//$("#SecInicio").hide("slow");
 	   	                  	 	 alert("Bienvenido");
 	   	                  	 }else{
 	   	                  	 	 alert("usuario o clave incorrecta(s)");
@@ -31,4 +32,4 @@ var inicioApp=function(){
       $("#btnAceptar").on("click",Aceptar);
 }
 
-$(document).ready("ready",inicioApp);
+$(document).ready(inicioApp);

@@ -11,10 +11,10 @@ function valida()
 	 $consulta="select * from usuarios where usuario= '".$usuario."' and
 	  clave='".$clave. "' limit 1" ; //Hace que la consulta se ejecute mas rapido
 	
-
-	  $resConsulta= mysql_query($con,$consulta); //Por si estamos accediendo a otra BD.
+//echo $consulta;
+	  $resConsulta= mysqli_query($con,$consulta); //Por si estamos accediendo a otra BD.
 	    //Si la contraseña esta mal no debe regresar ningun registro.
-	  if(mysql_num_rows ($resConsulta) > 0){
+	  if(mysqli_num_rows ($resConsulta) > 0){
 	  	$respuesta = true;
 
 	  }
