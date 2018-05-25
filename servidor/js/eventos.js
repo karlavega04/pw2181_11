@@ -35,7 +35,7 @@ var inicioApp=function(){
 
 	   var buscaUsuario = function()
 	   {
-	   	var usuario = $("txtNombreUsuario").val();
+	   	var usuario = $("#txtNombreUsuario").val();
         var parametros= "opc=buscaUsuario"+
          				"&usuario="+usuario+
          				"&aleatorio="+Math.random();
@@ -45,22 +45,16 @@ var inicioApp=function(){
 	   	                  cache:false,
 	   	                  type: "POST",
 	   	                  dataType: "json",
-	   	                  url: "php/validaentrada.php",
+	   	                  url: "php/buscausuario.php",
 	   	                  data:parametros,
 	   	                  success:function(response){
-	   	                  	  if(response.respuesta  == true){
-	   	                  	  	   $("#txtNombreUsuario").val(response.nombre);
-	   	                  	  	   $("#txtClaveUsuario").val(response.clave);
-	   	                  	  	}else{
-	   	                  	  	    $("txtNombre").focus();
-	   	                  	  	}
-
+	   	                  	  
 	   	                 },
 	   	                  error:function(xhr,ajaxOptions,thrownError){
 
 	   	                  }
 	   	              });
-	   }
+	   			}
 	   	}
 	   	var teclaNombreUsuario = function(tecla)
 	   {
@@ -68,8 +62,42 @@ var inicioApp=function(){
               buscaUsuario();
 	   	}
 	  }
+	  var Guardar = function(){
+	  	 var usuario=$("#txtNombreUsuario").val();
+	  	 var nombre =$("#txtNombre").val();
+	  	 var clave =$("#txtClaveUsuario").val();
+	  	 if(usuario!="" && nombre !="" && clave!=""){
+	  	 	$.ajax({
+	   	                  cache:false,
+	   	                  type: "POST",
+	   	                  dataType: "json",
+	   	                  url: "php/validaentrada.php",
+	   	                  data:parametros,
+	   	                  success:function(response){
+	   	                  	 if(response.respuesta == true){
+	   	                  	 	$("#SecInicio").hide("slow");
+	   	                  	 	 $("#frmUsuarios").show("slow");
+	   	                  	 	 //Posiciona el cursor en el cuadro de texto
+	   	                  	 	 $("#txtNombreUsuario").focus();
+	   	                  	 	 //alert("Bienvenido");
+	   	                  	 }else{
+	   	                  	 	 alert("usuario o clave incorrecta(s)");
+	   	                  	 }
+
+	   	                 },
+	   	                  error:function(xhr,ajaxOptions,thrownError){
+
+	   	                  }
+	   	              });
+
+	  	 }else
+	  	 {
+	  	 	alert("Llene todos los datos");
+	  	 }
+	  }
       $("#btnAceptar").on("click",Aceptar);
       $("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
+      $("#btnGuardar").on("click",Guardar);
       $("#frmUsuarios").hide();
 }
 
